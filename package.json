@@ -1,0 +1,108 @@
+{
+  "name": "material-ui-superselectfield",
+  "version": "1.5.4",
+  "description": "original Material-UI's SelectField component enhanced with autocompletion, multiselection, custom renderers, and infinite loading.",
+  "private": false,
+  "author": "Raphaël Morineau <raphael.morineau@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sharlaan/material-ui-superselectfield.git"
+  },
+  "homepage": "https://sharlaan.github.io/material-ui-superselectfield",
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "lib/SuperSelectField.js",
+  "dependencies": {
+    "browser-history": "^1.0.1",
+    "create-react-class": "^15.5.3",
+    "material-ui-superselectfield": "^1.5.4",
+    "prop-types": "^15.5.10",
+    "react-infinite": "^0.11.0",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-entries": "^1.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "enzyme": "^2.8.2",
+    "flag-icon-css": "^2.8.0",
+    "gh-pages": "^1.0.0",
+    "material-ui": "^0.18.1",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.11",
+    "react-tap-event-plugin": "^2.0.1",
+    "standard": "^10.0.2"
+  },
+  "peerDependencies": {
+    "material-ui": ">= 0.15 < 1",
+    "react": "^15.x",
+    "react-dom": "^15.x",
+    "react-tap-event-plugin": "^1.x || ^2.x"
+  },
+  "babel": {
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread",
+      "transform-object-entries"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "> 3%",
+              "safari >= 8"
+            ]
+          },
+          "modules": "commonjs",
+          "debug": false
+        }
+      ],
+      "react"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "standard"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "camelcase": "off",
+      "brace-style": "off",
+      "no-trailing-spaces": "off",
+      "no-multiple-empty-lines": "off",
+      "no-unused-vars": "warn"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "buildLib": "babel src/SuperSelectField.js -o lib/SuperSelectField.js",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "release": "yarn deploy  &&  yarn buildLib  &&  npm publish",
+    "eject": "react-scripts eject"
+  }
+}
