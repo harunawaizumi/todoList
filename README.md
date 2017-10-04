@@ -1,6 +1,3 @@
-** MEMO **
-
-
 # TodoList with Material Ui
 
 This is todo lists with material UI
@@ -22,6 +19,7 @@ React, Redux, MaterialUiを使った練習に最適
 
 
 <img width="770" alt="screen shot 2017-10-05 at 1 16 19 am" src="https://user-images.githubusercontent.com/19813624/31186870-e67844a0-a96a-11e7-8848-083328f56281.png">
+<br />
 <img width="782" alt="screen shot 2017-10-05 at 1 16 02 am" src="https://user-images.githubusercontent.com/19813624/31186908-fe0c7078-a96a-11e7-9999-a8fc26b758b6.png">
 
 
