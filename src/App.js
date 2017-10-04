@@ -40,8 +40,8 @@ export default () => (
 
       <div className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <h2>SuperSelectField</h2>
-        <h4>a Material-UI based dropdown component</h4>
+        <h2>TodoList with Material UI</h2>
+        <h4>Add, Show, Delete Items</h4>
       </div>
 
       <Nav />
