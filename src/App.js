@@ -50,9 +50,6 @@ export default () => (
         <Switch>
           <Route path='/example1' component={CodeExample1} />
           <Route path='/example2' component={CodeExample2} />
-          <Route path='/example3' component={CodeExample3} />
-          <Route path='/example4' component={CodeExample4} />
-          <Route path='/example5' component={CodeExample5} />
           <Route path='/example6' component={CardField} />
           <Route path='/example7' component={CodeExample7} />
           <Route component={Home} />

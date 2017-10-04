@@ -30,4 +30,4 @@ function items (state = [], action) {
   }
 }
 
-export default itemsReducer
+export default items

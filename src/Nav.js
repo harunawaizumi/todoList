@@ -15,11 +15,7 @@ export default () => (
     {[
       { route: '/example7', label: 'AddNew' },
       { route: '/example6', label: 'TodoList' },
-      { route: '/example1', label: 'Basic' },
-      { route: '/example2', label: 'Multiple' },
-      { route: '/example3', label: 'Autocomplete' },
-      { route: '/example4', label: 'Options grouping' },
-      { route: '/example5', label: <span className='multiLine'>Asynchronous loading</span> }
+      { route: '/example5', label: <span className='multiLine'>About This</span> }
     ].map(({ route, label }) => (
       <MenuItem
         key={route}
